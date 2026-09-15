@@ -45,12 +45,34 @@ main {
 
 .portfolio-item {
     margin-bottom: 5rem;
+    padding: 4rem;
+    text-align: justify;
+    background-color: rgb(164, 188, 212);
+}
+
+.portfolio-item h3{
+    margin: 1rem 0;
+}
+
+.portfolio-item p {
+    font-size: 1.2rem;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-content, .portfolio-content, .contact-content {
+     max-width: 60rem;
+    margin: 2rem auto;
 }
 
 .about-section {
-    background-color: #ffffff;
+    
 }
 
 .portfolio-section {
-    background-color: aliceblue;
+    
 }
