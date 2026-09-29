@@ -29,3 +29,57 @@ img {
   max-width: 100%;
   display: block;
 }
+
+
+/* color variables */
+
+:root {
+    --bg: lavender;
+    --font: darkslateblue;
+}
+
+body.dark {
+    --bg: darkslateblue;
+    --font: linen;
+}
+
+
+/* general css */
+
+body {
+    color: var(--font);
+    background-color: var(--bg);
+}
+
+header {
+    padding: 5rem;
+}
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+img {
+    width: 30rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#img1 {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+#img2 {
+    position: absolute;
+    top: 6rem;
+    left: 13rem;
+}
+#img3 {
+    position: absolute;
+    bottom: 5rem;
+    right: 6rem;
+}
