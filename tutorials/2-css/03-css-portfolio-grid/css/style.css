@@ -1,0 +1,133 @@
+/* color palette */
+
+:root {
+    --bg-color-1: rgb(64, 96, 138);
+    --bg-color-2: linear-gradient(90deg, rgba(173, 211, 240, 1) 0%, rgba(206, 162, 235, 1) 50%, rgba(237, 190, 232, 1) 100%);
+    --font: linen;
+    --accent-1: rgb(234, 214, 240);
+    --accent-2: aliceblue;
+    --dark: rgb(59, 34, 55);
+}
+
+/*
+font: #000, #ffffff, linen
+accent 1:
+accent 2:
+dark:
+*/
+
+/* CSS resets */
+
+/* Change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user size preferences */
+html {
+    font-size: 100%;
+}
+
+/* make images responsive */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* General CSS */
+
+body {
+    background-color: var(--bg-color-1);
+    color: var(--font);
+    font-size: 1.5rem;
+    font-family: "Lora", serif;
+}
+
+header {
+    padding: 5rem 2rem;
+    font-family: "Ubuntu", sans-serif;
+}
+
+header h1 {
+    color: var(--font);
+text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+h2 {
+    color: var(--font);
+    font-family: "Ubuntu", sans-serif;
+}
+
+h3 {
+    color: var(--font);
+    font-family: "Ubuntu", sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font);
+    margin: 0 1rem;
+    transition: all 0.5s ease;
+}
+
+nav a:hover {
+    color: var(--accent-1);
+}
+
+.about-content,
+.portfolio-content,
+.contact-content {
+    max-width: 70rem;
+    margin: 5rem auto;
+}
+
+.about-content h2,
+.portfolio-content h2,
+.contact-content h2 {
+    margin: 2rem 0;
+}
+
+.portfolio-item {
+    padding: 1rem;
+    background-color: var(--font);
+    color: var(--dark);
+}
+
+footer {
+    padding: 1rem 2rem;
+}
+
+footer img {
+    display: inline;
+    max-width: 3rem;
+    margin: 0 0.5rem;
+}
+
+/* flex styling */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container-grid {
+    display: flex;
+    flex: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.flex-item-grid {
+    flex: 1 0 18rem;
+    /* padding: 1rem; */
+    /* box-sizing: border-box; */
+}
