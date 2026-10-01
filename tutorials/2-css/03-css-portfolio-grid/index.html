@@ -14,13 +14,21 @@
 </head>
 
 <body>
-    <header class="flex-container">
-        <h1>Jennesa Mecano</h1>
-        <nav>
-            <a href="#about-section">About</a>
-            <a href="#portfolio-section">Works</a>
-            <a href="#contact-section">Contact</a>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Jennesa Mecano</h1>
+            </div>
+            <div class="nav">
+                <button class="hamburger">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#portfolio-section">Works</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </ul>
         </nav>
+        </div>
+
     </header>
     <main>
         <section class="about-section" id="about-section">
@@ -89,6 +97,7 @@
                     src="images/icon-logo-instagram.png" alt="instagram link"></a>
         </div>
     </footer>
+    <script src="js/hamburger.js"></script>
 </body>
 
 </html>

@@ -22,7 +22,7 @@ dark:
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 * {
@@ -43,6 +43,10 @@ img {
 
 /* General CSS */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-color-1);
     color: var(--font);
@@ -53,11 +57,12 @@ body {
 header {
     padding: 5rem 2rem;
     font-family: "Ubuntu", sans-serif;
+    margin-bottom: 7rem;
 }
 
 header h1 {
     color: var(--font);
-text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
 
 h2 {
@@ -74,12 +79,84 @@ h3 {
 nav a {
     text-decoration: none;
     color: var(--font);
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
     transition: all 0.5s ease;
 }
 
 nav a:hover {
     color: var(--accent-1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--font);
+    font-size: 4rem;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 750px) {
+    .navbar {
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+        align-self: flex-end;
+    }
+}
+
+main {
+    margin: 0;
+}
+
+@media (max-width: 1030px) {
+    main {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        margin: 1rem;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--font);
+        color: var(--bg-color-1);
+        padding: 0.75rem;
+    }
+
+.nav-menu a {
+    color: var(--bg-color-1);
+}
+
+    header {
+        padding: 2rem 2rem;
+    }
 }
 
 .about-content,
@@ -116,8 +193,30 @@ footer {
 
 footer img {
     display: inline;
-    max-width: 3rem;
+    max-width: 2.5rem;
     margin: 0 0.5rem;
+}
+
+@media (max-width: 750px) {
+    footer p {
+        font-size: 1.2rem;
+    }
+    
+    footer img {
+        max-width: 2rem;
+        margin: 0 0.2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    footer p {
+        font-size: 1rem;
+    }
+    
+    footer img {
+        max-width: 1.5rem;
+        margin: 0 0.1rem;
+    }
 }
 
 /* flex styling */
