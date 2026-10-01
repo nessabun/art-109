@@ -86,7 +86,7 @@ nav a:hover {
 .portfolio-content,
 .contact-content {
     max-width: 70rem;
-    margin: 5rem auto;
+    margin: 0 auto 7rem auto;
 }
 
 .about-content h2,
