@@ -50,13 +50,15 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   line-height: 1.8;
   white-space: normal;
-  color: #ccc;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.6);
-  font-family: sans-serif;
+  color: var(--font-color);
+  background-color:rgba(71, 61, 139, 0.288);
+  background-color: rgba(71, 61, 139, 0.288);
+  font-family: Ubuntu, sans-serif;
 }
 #baguetteBox-overlay .full-image:before {
   content: "";
@@ -150,7 +152,7 @@
        border-radius: 15%;
   background-color: #323232;
   background-color: rgba(50, 50, 50, 0.5);
-  color: #ddd;
+  color: var(--accent-2);
   font: 1.6em sans-serif;
   -webkit-transition: background-color 0.4s ease;
   transition: background-color 0.4s ease;
