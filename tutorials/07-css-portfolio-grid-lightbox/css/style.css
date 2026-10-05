@@ -150,9 +150,9 @@ main {
         padding: 0.75rem;
     }
 
-    .nav-menu a {
-        color: var(--bg-color-1);
-    }
+.nav-menu a {
+    color: var(--bg-color-1);
+}
 
     header {
         padding: 2rem 2rem;
@@ -161,31 +161,14 @@ main {
 
 .about-content,
 .portfolio-content,
-.contact-content,
-.project-content {
+.contact-content {
     max-width: 70rem;
     margin: 0 auto 7rem auto;
 }
 
-/* project content is for project pages */
-.project-content {
-    text-align: justify;
-}
-
-.project-content img {
-    margin: 0 auto;
-    border-radius: 0.3rem;
-    padding: 2rem;
-}
-
-.project-content p {
-    padding: 1rem;
-}
-
 .about-content h2,
 .portfolio-content h2,
-.contact-content h2,
-.project-content h2 {
+.contact-content h2 {
     margin: 2rem 0;
 }
 
@@ -194,11 +177,6 @@ main {
     background-color: var(--font);
     color: var(--dark);
     border-radius: 1.2rem;
-}
-
-.portfolio-item a {
-    text-decoration: none;
-    color: var(--dark);
 }
 
 .portfolio-item p {
@@ -223,7 +201,7 @@ footer img {
     footer p {
         font-size: 1.2rem;
     }
-
+    
     footer img {
         max-width: 2rem;
         margin: 0 0.2rem;
@@ -234,7 +212,7 @@ footer img {
     footer p {
         font-size: 1rem;
     }
-
+    
     footer img {
         max-width: 1.5rem;
         margin: 0 0.1rem;
